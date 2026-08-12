@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+<!--Aqui começa o css-->
+<style>
+
+body {  /*Estilo geral do corpo da página */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte da Letra */
+background-color: rgb(32, 30, 30); /* Cor de Fundo */
+margin: 20px; /* Espaçamento externo */ 
+
+}
+
+
+.fundo { /* Container dos cards */
+display: flex; /* Ativa Flebox */
+background-color: rgb(76, 76, 87); /* Cor do fundo */
+width: 100%; /* Ocupa toda a largura */
+height: 80%; /* Ocupa toda a altura */
+flex-wrap: wrap; /* Permite quebrar linha */
+justify-content: space-around; /* Distribui os cards */
+margin-top: 10px; /* Espaço acima */
+gap: 10px; /* Espaço entre os cards */
+background-image:url(https://i.pinimg.com/736x/02/98/7a/02987a2110bde3dd413ff7c1229f411a.jpg);
+
+
+}
+
+.card { /* Card individual */
+width: 300px; /* Largura fixa */
+height:300px; /* Altura fixa */
+text-align: center; /* Centraliza conteúdo */
+margin: 15px; /* Espaço lateral e horizontal do card */
+background-color:black; /* Cor do fundo */
+color:blue; /* Cor do texto */
+border-radius: 8px; /* Cantos arredondados */
+align-items: center; /* Centraliza o conteúdo */
+padding: 5px; /* Espaço interno */
+background-image: url();
+opacity: 100%;
+
+}
+
+.card img {
+    width: 80%;
+    height: 75%;
+background-color: grey;
+border-radius: 15px;
+object-fit: cover;
+}
+
+header { /* Cabeçalho */
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/858167bf-4db7-4b22-a3d7-7b460bc919c6/d6frcab-b0d5d939-c938-4955-b8ed-58cf63f486a7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg1ODE2N2JmLTRkYjctNGIyMi1hM2Q3LTdiNDYwYmM5MTljNlwvZDZmcmNhYi1iMGQ1ZDkzOS1jOTM4LTQ5NTUtYjhlZC01OGNmNjNmNDg2YTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cl3zdgiAlaXvqRib_-1hFJ-EerR-txI8QxqA0_26O0A);
+  margin: 10px; /* Espaçamento externo */
+  text-align: center; /* Centraliza o conteúdo*/
+  padding: 75px; /* Espaçamento interno*/ 
+  color: white; /* Centraliza o cont*/
+  -webkit-text-stroke:rgb(0, 0, 0);
+  
+}
+
+header h1{
+text-shadow: 5px 5px blue;
+color: yellow;
+}
+
+ nav a:hover { /* Quando o mouse passa sobre o link*/
+        text-decoration: underline; /* Adiciona sublinhado */
+        color: red; /* Muda a cor */
+    }
+
+ nav a { /* Links da navegação */
+         color:white; /* Cor dos links */
+         margin: 0 10px; /* Espaçamento Lateral */  
+         text-decoration: none; /* Remove o sublinhado */
+ font-size: 20px; /* Tamanho da fonte */
+  }
+
+.card:hover {
+transform: translateY(-10px) scale(1.02);
+border-color: red;
+box-shadow: 0 15px 20px white;
+background-position: center;
+background-image: url(https://media.tenor.com/Ij14c3cry30AAAAM/pokemon-pokemon-home.gif);
+}
+
+.subtítulo{
+text-shadow: 10px blue;
+text-align: center;
+color: yellow;
+}
+
+
+</style>
+<!--Aqui termina o css-->
+</head>
+<body>
+
+  <!--Aqui começa o  cabeçalho-->
+  <header>
+ <h1>POKÉMONS</h1>
+ <hr>
+ <nav>
+ <a href="">Sobre</a>
+ <a href="https://www.pokemon.com/br/pokedex">Pokédex</a>
+ <a href="">Pokémons</a>
+</nav>
+<hr>
+
+</header>
+<!--Aqui termina o cabeçalho-->
+
+
+
+<!--Aqui  começa o subtítulo-->
+<div class="subtítulo"> 
+  <hr>
+  <h2>Cards Pokémons Iniciais</h2>
+<hr>
+</div>
+<!--Aqui termina o subtítulo-->
+
+
+
+<div class="fundo">
+                <!--Card 1-->
+        <a href="https://www.pokemon.com/br/pokedex/charmander">
+
+        <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" alt="charmander">
+          <h2> Charmander </h2>
+        
+        </div>
+        </a>
+
+
+                <!--Card 2-->
+        <a href="https://www.pokemon.com/br/pokedex/squirtle">
+        <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="squirtle">
+          <h2> Squirtle </h2>
+        </div>
+        </a>
+                <!--Card 3-->
+        <a href="https://www.pokemon.com/br/pokedex/bulbasaur">
+        <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" alt="bulbasaur">
+          <h2> Bulbasaur </h2>
+        </div>
+        </a>   
+
+
+        <!--Card 4-->
+      <a href="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png" alt="Cyndaquil">
+          <h2>Cyndaquil</h2>
+        </div>
+        </a> 
+    
+
+    
+    
+    <!--Card 5-->
+      <a href="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/158.png">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/158.png" alt="Totodile">
+          <h2> Totodile </h2>
+        </div>
+        </a> 
+    
+  
+    <!--Card 6-->
+      <a href="https://www.pokemon.com/br/pokedex/chikorita">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/152.png" alt="Chikorita">
+          <h2> Chikorita </h2>
+        </div>
+        </a> 
+
+
+<!--Card 7-->
+      <a href="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/255.png">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/255.png" alt="Torchic">
+          <h2> Torchic </h2>
+        </div>
+        </a> 
+
+        <!--Card 8-->
+      <a href="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/258.png">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/258.png" alt="Mudkip">
+          <h2> Mudkip</h2>
+        </div>
+        </a> 
+
+        <!--Card 9-->
+      <a href="https://www.pokemon.com/br/pokedex/treecko">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/252.png" alt="Treecko">
+          <h2> Treecko </h2>
+        </div>
+        </a> 
+
+        <!--Card 10-->
+      <a href="https://www.pokemon.com/br/pokedex/chimchar">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/390.png" alt="Chimchar">
+          <h2> Chimchar </h2>
+        </div>
+        </a> 
+
+<!--Card 11-->
+      <a href="https://www.pokemon.com/br/pokedex/chikorita">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/393.png" alt="Piplup">
+          <h2> Piplup </h2>
+        </div>
+        </a> 
+
+        <!--Card 12-->
+      <a href="https://www.pokemon.com/br/pokedex/turtwig">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/387.png" alt="Turtwig">
+          <h2> Turtwig </h2>
+        </div>
+        </a> 
+
+
+<!--Card 13-->
+      <a href="https://www.pokemon.com/br/pokedex/tepig">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/498.png" alt="Tepig">
+          <h2> Tepig </h2>
+        </div>
+        </a> 
+
+<!--Card 14-->
+      <a href="https://www.pokemon.com/br/pokedex/oshawott">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/501.png" alt="Oshawott">
+          <h2> Oshawott </h2>
+        </div>
+        </a> 
+
+        <!--Card 15-->
+      <a href="https://www.pokemon.com/br/pokedex/snivy">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/495.png" alt="Snivy">
+          <h2> Snivy </h2>
+        </div>
+        </a> 
+
+        <!--Card 16-->
+      <a href="https://www.pokemon.com/br/pokedex/fennekin">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/653.png" alt="Fennekin">
+          <h2> Fennekin </h2>
+        </div>
+        </a> 
+
+        <!--Card 17-->
+      <a href="https://www.pokemon.com/br/pokedex/froakie">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/656.png" alt="Froakie">
+          <h2> Froakie </h2>
+        </div>
+        </a> 
+
+        <!--Card 18-->
+      <a href="https://www.pokemon.com/br/pokedex/chespin">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/650.png" alt="Chespin">
+          <h2> Chespin </h2>
+        </div>
+        </a> 
+
+        <!--Card 19-->
+      <a href="https://www.pokemon.com/br/pokedex/litten">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/725.png" alt="Litten">
+          <h2> Litten </h2>
+        </div>
+        </a> 
+
+        <!--Card 20-->
+      <a href="https://www.pokemon.com/br/pokedex/popplio">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/728.png" alt="Popplio">
+          <h2> Popplio </h2>
+        </div>
+        </a> 
+
+        <!--Card 21-->
+      <a href="https://www.pokemon.com/br/pokedex/rowlet">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/722.png" alt="Rowlet">
+          <h2> Rowlet </h2>
+        </div>
+        </a> 
+
+<!--Card 22-->
+      <a href="https://www.pokemon.com/br/pokedex/scorbunny">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/813.png" alt="Scorbunny">
+          <h2> Scorbunny </h2>
+        </div>
+        </a> 
+
+        <!--Card 23-->
+      <a href="https://www.pokemon.com/br/pokedex/sobble">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/816.png" alt="Sobble">
+          <h2> Sobble </h2>
+        </div>
+        </a> 
+
+        <!--Card 24-->
+      <a href="https://www.pokemon.com/br/pokedex/grookey">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/810.png" alt="Grookey">
+          <h2> Grookey </h2>
+        </div>
+        </a> 
+
+        <!--Card 25-->
+      <a href="https://www.pokemon.com/br/pokedex/fuecoco">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/909.png" alt="Fuecoco">
+          <h2> Fuecoco </h2>
+        </div>
+        </a> 
+
+        <!--Card 26-->
+      <a href="https://www.pokemon.com/br/pokedex/quaxly">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/912.png" alt="Quaxly">
+          <h2> Quaxly </h2>
+        </div>
+        </a> 
+
+        <!--Card 27-->
+      <a href="https://www.pokemon.com/br/pokedex/sprigatito">
+       <div class="card">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/906.png" alt="Sprigatito">
+          <h2> Sprigatito </h2>
+        </div>
+        </a> 
+
+
+
+</div>
+</body>
+</html>
