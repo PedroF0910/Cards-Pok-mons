@@ -1,0 +1,86 @@
+
+body {  /*Estilo geral do corpo da página */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte da Letra */
+background-color: rgb(32, 30, 30); /* Cor de Fundo */
+margin: 20px; /* Espaçamento externo */ 
+
+}
+
+
+.fundo { /* Container dos cards */
+display: flex; /* Ativa Flebox */
+background-color: rgb(76, 76, 87); /* Cor do fundo */
+width: 100%; /* Ocupa toda a largura */
+height: 80%; /* Ocupa toda a altura */
+flex-wrap: wrap; /* Permite quebrar linha */
+justify-content: space-around; /* Distribui os cards */
+margin-top: 10px; /* Espaço acima */
+gap: 10px; /* Espaço entre os cards */
+background-image:url(https://i.pinimg.com/736x/02/98/7a/02987a2110bde3dd413ff7c1229f411a.jpg);
+
+
+}
+
+.card { /* Card individual */
+width: 300px; /* Largura fixa */
+height:300px; /* Altura fixa */
+text-align: center; /* Centraliza conteúdo */
+margin: 15px; /* Espaço lateral e horizontal do card */
+background-color:black; /* Cor do fundo */
+color:blue; /* Cor do texto */
+border-radius: 8px; /* Cantos arredondados */
+align-items: center; /* Centraliza o conteúdo */
+padding: 5px; /* Espaço interno */
+background-image: url();
+opacity: 100%;
+
+}
+
+.card img {
+    width: 80%;
+    height: 75%;
+background-color: grey;
+border-radius: 15px;
+object-fit: cover;
+}
+
+header { /* Cabeçalho */
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/858167bf-4db7-4b22-a3d7-7b460bc919c6/d6frcab-b0d5d939-c938-4955-b8ed-58cf63f486a7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg1ODE2N2JmLTRkYjctNGIyMi1hM2Q3LTdiNDYwYmM5MTljNlwvZDZmcmNhYi1iMGQ1ZDkzOS1jOTM4LTQ5NTUtYjhlZC01OGNmNjNmNDg2YTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cl3zdgiAlaXvqRib_-1hFJ-EerR-txI8QxqA0_26O0A);
+  margin: 10px; /* Espaçamento externo */
+  text-align: center; /* Centraliza o conteúdo*/
+  padding: 75px; /* Espaçamento interno*/ 
+  color: white; /* Centraliza o cont*/
+  -webkit-text-stroke:rgb(0, 0, 0);
+  
+}
+
+header h1{
+text-shadow: 5px 5px blue;
+color: yellow;
+}
+
+ nav a:hover { /* Quando o mouse passa sobre o link*/
+        text-decoration: underline; /* Adiciona sublinhado */
+        color: red; /* Muda a cor */
+    }
+
+ nav a { /* Links da navegação */
+         color:white; /* Cor dos links */
+         margin: 0 10px; /* Espaçamento Lateral */  
+         text-decoration: none; /* Remove o sublinhado */
+ font-size: 20px; /* Tamanho da fonte */
+  }
+
+.card:hover {
+transform: translateY(-10px) scale(1.02);
+border-color: red;
+box-shadow: 0 15px 20px white;
+background-position: center;
+background-image: url(https://media.tenor.com/Ij14c3cry30AAAAM/pokemon-pokemon-home.gif);
+}
+
+.subtítulo{
+text-shadow: 10px blue;
+text-align: center;
+color: yellow;
+}
